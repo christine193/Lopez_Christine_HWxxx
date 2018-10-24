@@ -1,0 +1,165 @@
+h1 {
+  color: white;
+  position: absolute;
+  z-index: 4;
+  margin: 70px 0 0 40px;
+  letter-spacing: 0.1em;
+  font-size: 44px;
+}
+
+#posterContainer {
+  position: relative;
+  height: 1900px;
+  width: 750px;
+  margin: 0 auto;
+  background: linear-gradient(to bottom, #ccccff -7%, #ff99cc 100%);
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #efefef;
+}
+
+#heroImage {
+  height: 700px;
+  background-image: url(../images/bottom.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+#title p {
+  color: white;
+  position: absolute;
+  width: 370px;
+  margin: 150px 0 0 40px;
+}
+
+#smartPhone {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  margin: 50px 0 0 500px;
+  z-index: 3;
+  border-radius: 50%;
+}
+
+#smartPhone:hover {
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite alternate;
+}
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-8px);
+  }
+}
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-8px);
+  }
+}
+
+#pictureSquare {
+  fill: #A2C1D1;
+}
+
+#smartPhone:hover #pictureSquare {
+  fill: #d1c9fc;
+}
+
+#section1 {
+  margin-top: -250px;
+  background-color: white;
+}
+
+.circleText {
+  text-align: center;
+  padding: 45px 10px 10px 10px;
+  color: white;
+}
+
+.circle {
+  z-index: 10;
+  margin: 10px 0 10px 25px;
+  display: inline-block;
+  background-color: #d1c9fc;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+
+#screen {
+  position: relative;
+  width: 98px;
+  height: 150px;
+  background-color: rgba(0, 0, 0, 0.1);
+  transform: rotate(-30deg) skew(25deg) scale(0.8);
+  transition: 0.5s;
+  float: right;
+  margin: 70px;
+}
+#screen img {
+  position: absolute;
+  transition: 0.2s;
+  opacity: 1;
+  width: 98px;
+  height: 154px;
+}
+
+.hoverBox:hover #screen img:nth-child(4) {
+  transform: translate(160px, -160px);
+  opacity: 1;
+}
+
+.hoverBox:hover #screen img:nth-child(3) {
+  transform: translate(120px, -120px);
+  opacity: 0.8;
+}
+
+.hoverBox:hover #screen img:nth-child(2) {
+  transform: translate(80px, -80px);
+  opacity: 0.6;
+}
+
+.hoverBox:hover #screen img:nth-child(1) {
+  transform: translate(40px, -40px);
+  opacity: 0.4;
+}
+
+#screenText h2 {
+  color: white;
+  display: block;
+  margin-top: 40px;
+  text-align: center;
+}
+#screenText p {
+  color: white;
+  margin: 0 auto;
+  padding: 8px;
+  text-align: center;
+}
+
+.hoverBox {
+  margin-top: 80px;
+  height: 450px;
+  width: 33.3%;
+  float: left;
+}
+.hoverBox p {
+  opacity: 0;
+}
+
+.hoverBox:hover {
+  background-color: plum;
+}
+.hoverBox:hover p {
+  opacity: 1;
+}
+
+/*# sourceMappingURL=main.css.map */
