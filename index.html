@@ -7,6 +7,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
  </head>
 
 <body>
@@ -15,15 +19,15 @@
 
    <div id="heroImage">
       <div id="title">
-        <h1 class="animated fadeInRight">Instagram</h1>
+        <h1 class="wow fadeInRight">Instagram</h1>
         <p>some description about social media and our lives I guess will go here.
             some description about social media and our lives I guess will go here.
         </p>
      </div>
      <div id="smartPhone">
-          
-       
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+         <div id="animationArea">
+                <i class="fas fa-3x fa-heart"></i>
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                  viewBox="0 0 212 310" style="enable-background:new 0 0 112 210;" xml:space="preserve">
             <g id="phoneBkg_1_">
                 <g id="phoneBkg">
@@ -93,7 +97,11 @@
                 </g>
             </g>
             </svg>
-       
+          
+            
+            
+            <p>so I think ill put when instagram was founded and stuff here.Maybe some more text</p>
+       </div> <!--end of animation areaa-->
        
    </div> 
 </div>
@@ -101,18 +109,18 @@
    
   
    <div id="section1"><!--start section 1-->
-     <div class="circle animated bounceInDown">
+     <div class="circle wow fadeInUp">
         <p class="circleText" id="circle1">coolfact 1</p>
     </div>
 
-    <div class="circle animated bounceInDown">
+    <div class="circle wow fadeInUp">
         <p class="circleText" id="circle2">coolfact 2</p>
     </div>
 
-    <div class="circle animated bounceInDown">
+    <div class="circle wow fadeInUp">
         <p class="circleText" id="circle3">coolfact 3</p>
     </div>
-    <div class="circle animated bounceInDown">
+    <div class="circle wow fadeInUp">
         <p class="circleText" id="circle4">coolfact 4</p>
     </div>
   </div><!--end section 1-->
@@ -129,7 +137,7 @@
         <img src="images/screen.png">
       </div>
           <div id="screenText">
-             <h2>Facebook</h2>
+             <h3>Facebook</h3>
              <p>maybe write some cool info here</p>
          </div>
     </section>
@@ -142,10 +150,11 @@
           <img src="images/screen.png">
         </div>
             <div id="screenText">
-               <h2 class="hoverTitles">Twitter</h2>
+               <h3 class="hoverTitles">Twitter</h3>
                <p>maybe write some cool info here</p>
            </div>
       </section>
+
       <section class="hoverBox">
           <div id="screen">
             <img src="images/screen.png">
@@ -154,16 +163,22 @@
             <img src="images/screen.png">
           </div>
               <div id="screenText">
-                 <h2 class="hoverTitles">Instagram</h2>
+                 <h3 class="hoverTitles">Instagram</h3>
                  <p>maybe write some cool info here</p>
                  
              </div>
         </section>
+      
+    </div><!--end of social use section-->
+<div id="demo">
+    <h2>Social Demographic</h2>
+            <div id="circleDemo" class="wow bounceInDown"></div>
+ </div>
 
 
 
   </div>
-</div> 
+
 
  </body>
 

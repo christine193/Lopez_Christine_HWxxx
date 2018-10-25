@@ -1,23 +1,31 @@
+@import url("https://fonts.googleapis.com/css?family=Pacifico");
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #efefef;
+}
+
 h1 {
+  font-family: "Pacifico", cursive;
   color: white;
   position: absolute;
   z-index: 4;
   margin: 70px 0 0 40px;
-  letter-spacing: 0.1em;
-  font-size: 44px;
+  font-size: 64px;
+  font-weight: 100;
+}
+
+h2 {
+  font-family: "Pacifico", cursive;
+  color: white;
+  font-size: 40px;
+  font-weight: 100;
 }
 
 #posterContainer {
-  position: relative;
-  height: 1900px;
+  height: 2900px;
   width: 750px;
   margin: 0 auto;
   background: linear-gradient(to bottom, #ccccff -7%, #ff99cc 100%);
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #efefef;
 }
 
 #heroImage {
@@ -28,20 +36,36 @@ body {
   background-position: bottom;
 }
 
+.fas {
+  color: lightblue;
+  position: absolute;
+  margin: 125px 0 0 70px;
+}
+
+#animationArea:hover .fas {
+  color: #ff99cc;
+}
+
 #title p {
   color: white;
   position: absolute;
   width: 370px;
-  margin: 150px 0 0 40px;
+  margin: 180px 0 0 40px;
 }
 
 #smartPhone {
   position: absolute;
+  z-index: 100;
   width: 350px;
   height: 350px;
   margin: 50px 0 0 500px;
-  z-index: 3;
   border-radius: 50%;
+}
+#smartPhone p {
+  width: 170px;
+  display: block;
+  margin-top: -150px;
+  color: lightgrey;
 }
 
 #smartPhone:hover {
@@ -64,6 +88,9 @@ body {
     transform: translateY(-8px);
   }
 }
+#smartPhone:hover p {
+  display: none;
+}
 
 #pictureSquare {
   fill: #A2C1D1;
@@ -74,6 +101,7 @@ body {
 }
 
 #section1 {
+  height: 500px;
   margin-top: -250px;
   background-color: white;
 }
@@ -86,12 +114,20 @@ body {
 
 .circle {
   z-index: 10;
-  margin: 10px 0 10px 25px;
+  margin: 70px 0 10px 25px;
   display: inline-block;
   background-color: #d1c9fc;
   height: 150px;
   width: 150px;
   border-radius: 50%;
+}
+
+.circle:hover {
+  background-color: #ff99cc;
+}
+
+#socialUse {
+  display: block;
 }
 
 #screen {
@@ -132,7 +168,7 @@ body {
   opacity: 0.4;
 }
 
-#screenText h2 {
+#screenText h3 {
   color: white;
   display: block;
   margin-top: 40px;
@@ -160,6 +196,23 @@ body {
 }
 .hoverBox:hover p {
   opacity: 1;
+}
+
+#demo {
+  margin-top: 520px;
+  height: 400px;
+}
+#demo h2 {
+  text-align: center;
+  padding-top: 20px;
+}
+
+#circleDemo {
+  background-color: #d1c9fc;
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=main.css.map */
