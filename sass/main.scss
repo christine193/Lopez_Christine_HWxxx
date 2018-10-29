@@ -1,7 +1,8 @@
 @import '_vars';
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:$minorFont;
     background-color:#efefef;
+    
 }
 
 h1
@@ -20,6 +21,10 @@ h2{
     color:white;
     font-size:40px;
     font-weight:100;
+}
+span{
+    color:$pink;
+    font-size:20px;
 }
 
 #posterContainer{
@@ -44,19 +49,16 @@ h2{
     background-size:cover;
     background-position:bottom;
 
- 
-}
-
-
-     .fas{
+ .fa-heart{
         color:lightblue;
         position: absolute;
         margin:125px 0 0 70px;
         
           }
+        }
 
 
-#animationArea:hover .fas{
+#animationArea:hover .fa-heart{
     color:$pink;
 }
 
@@ -99,11 +101,7 @@ h2{
     0% { transform: translateY(0); }
     100% { transform: translateY(-8px); }
                 }
-        p{
-           display:none;
-        }
-                
-
+ 
 }
 #pictureSquare{
     fill:#A2C1D1;
@@ -122,14 +120,25 @@ h2{
     height:500px;
     margin-top:-250px;
     background-color: white;
+  
 }
 
 .circleText{
    text-align: center;
    padding:45px 10px 10px 10px;
    color:white;
+   p{
+       color:grey;
+       position:absolute;
+       text-align: center;
+       margin:0 auto;
+       margin-top:100px;
+       display:none;
+    
+   }
 
 }
+
 
 
 
@@ -141,12 +150,21 @@ h2{
     height:150px;
     width:150px;
     border-radius: 50%;
+    position: relative;
  
 }
 .circle:hover{
     
     background-color:$pink;
+    transition:0.5s;
+    p{
+        display:block;
+
+    }
+
 }
+
+
 //social use
 #socialUse{
     display:block;
@@ -216,10 +234,10 @@ h2{
 
 .hoverBox
 {
-    margin-top:80px;
-  height:450px;
+  
+  height:500px;
   width:33.3%;
- 
+  border-bottom:2px solid white;
 
   float:left;
 
@@ -231,6 +249,7 @@ h2{
 .hoverBox:hover {
     
     background-color:plum;
+    transition:0.5s;
 
    
 
@@ -238,24 +257,38 @@ h2{
         opacity: 1;
     }
 }
-//demographic section
+//demographic section--pie chart
 
 #demo{
   
     margin-top:520px;
-    height:400px;
+    height:800px;
     h2{
         text-align: center;
-      padding-top:20px;
+        padding-top:20px;
     }
 }
-#circleDemo
+#circleDemo svg
 {
-    background-color:$purp;
-    height:400px;
-    width:400px;
-    border-radius:50%;
-    margin:0 auto;
-    
-  
+fill:$purp;
+margin-left:130px;
+height:500px;
+cursor: pointer;
 }
+#textArea{
+    text-align:center;
+    
+}
+
+.st0:hover {
+    fill:$pink;
+    transition:0.5s;
+}
+
+.pieText{
+    color:white;
+    font-family: $mainFont;
+    font-size:20px;
+    margin-top:-30px;
+}
+

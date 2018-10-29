@@ -1,30 +1,51 @@
 
+(function(){ console.log("JS online");
+
 var hoverArea = document.getElementById('animationArea');
 
 hoverArea.onmouseover = function ()
 {
     var animate = anime({
-    targets: 'i.fas',
+    targets: '#heroImage .fa-heart',
     loop: false,
-    duration:1000,
+    duration:900,
     translateX:[
-      {value:200, duration:500},
+      {value:200, duration:450},
       {value:0, duration:800}
     ],
   });
+}
 
+new WOW().init(); //animation library 
+
+
+//pie chart
+let pieces = document.querySelectorAll(".data-ref");
+
+function getData() {
+	let targetURL = `./includes/connect.php?info=${this.id}`;
+
+	fetch(targetURL) //getting data
+    .then(res => res.json()) //turning result into a plain JS object
+    .then(data => {
+        
+        showInfoData(data[0]);//run function to parse our data
+    })
+    .catch(function(error) {
+        console.log(error); //log errors
+    });
+}
+
+function showInfoData(data) { //lets see that data
+	const { ages } = data;
+
+
+
+    //console.log(ages);
+    document.querySelector('.pieText').textContent = ages;  
 
 }
 
+pieces.forEach( piece =>  piece.addEventListener('click', getData)); //show data on page c:
 
-
-
-
-
-
-
-
-
-
-
-new WOW().init();
+}) ();
