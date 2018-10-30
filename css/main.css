@@ -4,20 +4,22 @@ body {
   font-family: "Hind", sans-serif;
   background-color: #efefef;
 }
+body p {
+  font-family: "Hind", sans-serif;
+}
 
 h1 {
   font-family: "Pacifico", cursive;
   color: white;
   position: absolute;
   z-index: 4;
-  margin: 70px 0 0 40px;
+  margin: 70px 0 0 60px;
   font-size: 64px;
   font-weight: 100;
 }
 
 h2 {
   font-family: "Pacifico", cursive;
-  color: white;
   font-size: 40px;
   font-weight: 100;
 }
@@ -28,10 +30,12 @@ span {
 }
 
 #posterContainer {
-  height: 2900px;
+  height: 4000px;
   width: 750px;
   margin: 0 auto;
-  background: linear-gradient(to bottom, #ccccff -7%, #ff99cc 100%);
+  background: -moz-linear-gradient(top, #ccccff 0%, #ff99cc 100%);
+  background: -webkit-linear-gradient(top, #ccccff 0%, #ff99cc 100%);
+  background: linear-gradient(to bottom, #ccccff 0%, #ff99cc 100%);
 }
 
 #heroImage {
@@ -39,6 +43,9 @@ span {
   background-image: url(../images/bottom.svg);
   background-repeat: no-repeat;
   background-size: cover;
+  -ms-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
   background-position: bottom;
 }
 #heroImage .fa-heart {
@@ -103,9 +110,14 @@ span {
 }
 
 #section1 {
-  height: 500px;
-  margin-top: -250px;
+  height: 420px;
+  margin-top: -290px;
   background-color: white;
+}
+#section1 h2 {
+  color: #d1c9fc;
+  text-align: right;
+  padding-right: 40px;
 }
 
 .circleText {
@@ -124,7 +136,7 @@ span {
 
 .circle {
   z-index: 10;
-  margin: 70px 0 10px 25px;
+  margin: 40px 0 10px 25px;
   display: inline-block;
   background-color: #d1c9fc;
   height: 150px;
@@ -161,6 +173,10 @@ span {
   opacity: 1;
   width: 98px;
   height: 154px;
+}
+
+.hoverbox {
+  position: relative;
 }
 
 .hoverBox:hover #screen img:nth-child(4) {
@@ -216,11 +232,18 @@ span {
 
 #demo {
   margin-top: 520px;
-  height: 800px;
+  height: 950px;
 }
 #demo h2 {
   text-align: center;
   padding-top: 20px;
+  color: white;
+  padding-bottom: 40px;
+}
+
+.demoText {
+  color: white;
+  margin: 0 0 20px 400px;
 }
 
 #circleDemo svg {
@@ -241,9 +264,73 @@ span {
 
 .pieText {
   color: white;
+  display: inline;
   font-family: "Pacifico", cursive;
-  font-size: 20px;
-  margin-top: -30px;
+  font-size: 30px;
+  margin: 30px 0 60px 0;
+}
+
+#moreStats {
+  margin-top: 90px;
+  margin-bottom: 50px;
+  background-color: #d1c9fc;
+  height: 600px;
+}
+#moreStats p {
+  padding: 20px;
+  width: 28%;
+  float: left;
+  text-align: center;
+  color: white;
+  border-top: 1px solid white;
+}
+
+#section3 {
+  background-color: white;
+  height: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+#section3 h2 {
+  color: #d1c9fc;
+  padding: 40px 0 0 10px;
+  margin-bottom: 30px;
+}
+#section3 p {
+  width: 200px;
+  margin: 0 auto;
+}
+
+.animationBox {
+  height: 280px;
+  width: 280px;
+  background-color: lightblue;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+#celeb2 {
+  float: right;
+  width: 50%;
+}
+
+#celeb {
+  width: 50%;
+  float: left;
+}
+
+.moreInfo {
+  padding: 70px;
+  width: 100px;
+  color: white;
+}
+
+.number {
+  float: right;
+  font-size: 120px;
+  font-family: "Pacifico", cursive;
+  color: white;
+  margin: -180px 150px 0 0;
 }
 
 /*# sourceMappingURL=main.css.map */

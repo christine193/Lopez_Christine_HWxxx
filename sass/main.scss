@@ -2,6 +2,9 @@
 body{
     font-family:$minorFont;
     background-color:#efefef;
+    p{
+        font-family:$minorFont;
+    }
     
 }
 
@@ -11,16 +14,16 @@ h1
     color:white;
     position: absolute;
     z-index: 4;
-    margin:70px 0 0 40px;
+    margin:70px 0 0 60px;
     font-size:64px;
     font-weight: 100;
 }
 
 h2{
     font-family:$mainFont;
-    color:white;
     font-size:40px;
     font-weight:100;
+ 
 }
 span{
     color:$pink;
@@ -28,12 +31,15 @@ span{
 }
 
 #posterContainer{
-    //position:relative;
-    height:2900px;
+    height:4000px;
     width:750px;
-    //border: solid grey 2px;
     margin:0 auto;
-    background: linear-gradient(to bottom, #ccccff -7%, #ff99cc 100%);
+   //background: linear-gradient(to bottom, #ccccff -7%, #ff99cc 100%);
+    //padding:20px; kinda looks cool
+    
+    background: -moz-linear-gradient(top, rgba(204,204,255,1) 0%, rgba(255,153,204,1) 100%); 
+    background: -webkit-linear-gradient(top, rgba(204,204,255,1) 0%,rgba(255,153,204,1) 100%);
+    background: linear-gradient(to bottom, rgba(204,204,255,1) 0%,rgba(255,153,204,1) 100%); 
   
 }
 
@@ -42,12 +48,16 @@ span{
 
 
 #heroImage{
-
+   
     height:700px;
     background-image:url(../images/bottom.svg);
     background-repeat: no-repeat;
     background-size:cover;
+    -ms-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
     background-position:bottom;
+    
 
  .fa-heart{
         color:lightblue;
@@ -115,11 +125,17 @@ span{
   }
 //section 1
 
+
 #section1
 {
-    height:500px;
-    margin-top:-250px;
+    height:420px;
+    margin-top:-290px;
     background-color: white;
+    h2{
+      color:$purp;
+      text-align:right;
+      padding-right:40px;
+    }
   
 }
 
@@ -144,7 +160,7 @@ span{
 
 .circle{
     z-index: 10;
-    margin:70px 0 10px 25px;
+    margin:40px 0 10px 25px;
     display:inline-block;
     background-color:$purp;
     height:150px;
@@ -191,6 +207,9 @@ span{
     height:154px;
 
 }
+   }
+   .hoverbox{
+       position:relative;
    }
 
 
@@ -257,16 +276,25 @@ span{
         opacity: 1;
     }
 }
+
 //demographic section--pie chart
 
 #demo{
   
     margin-top:520px;
-    height:800px;
+    height:950px;
     h2{
         text-align: center;
         padding-top:20px;
+        color:white;
+        padding-bottom: 40px;
+       
     }
+   
+}
+.demoText{
+    color:white;
+    margin:0 0 20px 400px;
 }
 #circleDemo svg
 {
@@ -275,6 +303,7 @@ margin-left:130px;
 height:500px;
 cursor: pointer;
 }
+
 #textArea{
     text-align:center;
     
@@ -287,8 +316,74 @@ cursor: pointer;
 
 .pieText{
     color:white;
+    display:inline;
     font-family: $mainFont;
-    font-size:20px;
-    margin-top:-30px;
+    font-size:30px;
+    margin:30px 0 60px 0;
+ 
+}
+#moreStats{
+      margin-top:90px;
+      margin-bottom:50px;
+      background-color:$purp;
+      height:600px;
+
+    p{
+        padding:20px;
+        width:28%;
+        float:left;
+        text-align: center;
+        color:white;
+        border-top: 1px solid white;
+      
+    }
 }
 
+//section 3
+#section3{
+    background-color:white;
+    height:700px;
+    margin:0 auto;
+    text-align: center;
+    h2{
+        color:$purp;
+        padding:40px 0 0 10px;
+        margin-bottom:30px;
+    }
+    p{
+        width:200px;
+        margin:0 auto;
+    }
+}
+.animationBox {
+    height:280px;
+    width:280px;
+    background-color:lightblue;
+    margin:0 auto;
+    margin-top:30px;
+}
+#celeb2{
+    float:right;
+    width:50%;
+   
+
+}
+#celeb{
+    width:50%;
+    float:left;
+
+}
+.moreInfo{
+  padding:70px;
+  width:100px;
+  color:white;
+
+}
+.number{
+    float:right;
+     font-size:120px;
+     font-family:$mainFont;
+     color:white;
+     margin:-180px 150px 0 0;
+ 
+}
