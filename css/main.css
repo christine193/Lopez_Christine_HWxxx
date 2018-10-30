@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css?family=Pacifico");
+@import url("https://fonts.googleapis.com/css?family=Hind");
+body {
+  font-family: "Hind", sans-serif;
+  background-color: #efefef;
+}
+body p {
+  font-family: "Hind", sans-serif;
+}
+
+h1 {
+  font-family: "Pacifico", cursive;
+  color: white;
+  position: absolute;
+  z-index: 4;
+  margin: 70px 0 0 60px;
+  font-size: 64px;
+  font-weight: 100;
+}
+
+h2 {
+  font-family: "Pacifico", cursive;
+  font-size: 40px;
+  font-weight: 100;
+}
+
+span {
+  color: #ff99cc;
+  font-size: 20px;
+}
+
+#posterContainer {
+  height: 4000px;
+  width: 750px;
+  margin: 0 auto;
+  background: -moz-linear-gradient(top, #ccccff 0%, #ff99cc 100%);
+  background: -webkit-linear-gradient(top, #ccccff 0%, #ff99cc 100%);
+  background: linear-gradient(to bottom, #ccccff 0%, #ff99cc 100%);
+}
+
+#heroImage {
+  height: 700px;
+  background-image: url(../images/bottom.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -ms-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-position: bottom;
+}
+#heroImage .fa-heart {
+  color: lightblue;
+  position: absolute;
+  margin: 125px 0 0 70px;
+}
+
+#animationArea:hover .fa-heart {
+  color: #ff99cc;
+}
+
+#title p {
+  color: white;
+  position: absolute;
+  width: 370px;
+  margin: 180px 0 0 40px;
+}
+
+#smartPhone {
+  position: absolute;
+  z-index: 100;
+  width: 350px;
+  height: 350px;
+  margin: 50px 0 0 500px;
+  border-radius: 50%;
+}
+#smartPhone p {
+  width: 170px;
+  display: block;
+  margin-top: -150px;
+  color: lightgrey;
+}
+
+#smartPhone:hover {
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite alternate;
+}
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-8px);
+  }
+}
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-8px);
+  }
+}
+
+#pictureSquare {
+  fill: #A2C1D1;
+}
+
+#smartPhone:hover #pictureSquare {
+  fill: #d1c9fc;
+}
+
+#section1 {
+  height: 420px;
+  margin-top: -290px;
+  background-color: white;
+}
+#section1 h2 {
+  color: #d1c9fc;
+  text-align: right;
+  padding-right: 40px;
+}
+
+.circleText {
+  text-align: center;
+  padding: 45px 10px 10px 10px;
+  color: white;
+}
+.circleText p {
+  color: grey;
+  position: absolute;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 100px;
+  display: none;
+}
+
+.circle {
+  z-index: 10;
+  margin: 40px 0 10px 25px;
+  display: inline-block;
+  background-color: #d1c9fc;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.circle:hover {
+  background-color: #ff99cc;
+  transition: 0.5s;
+}
+.circle:hover p {
+  display: block;
+}
+
+#socialUse {
+  display: block;
+}
+
+#screen {
+  position: relative;
+  width: 98px;
+  height: 150px;
+  background-color: rgba(0, 0, 0, 0.1);
+  transform: rotate(-30deg) skew(25deg) scale(0.8);
+  transition: 0.5s;
+  float: right;
+  margin: 70px;
+}
+#screen img {
+  position: absolute;
+  transition: 0.2s;
+  opacity: 1;
+  width: 98px;
+  height: 154px;
+}
+
+.hoverbox {
+  position: relative;
+}
+
+.hoverBox:hover #screen img:nth-child(4) {
+  transform: translate(160px, -160px);
+  opacity: 1;
+}
+
+.hoverBox:hover #screen img:nth-child(3) {
+  transform: translate(120px, -120px);
+  opacity: 0.8;
+}
+
+.hoverBox:hover #screen img:nth-child(2) {
+  transform: translate(80px, -80px);
+  opacity: 0.6;
+}
+
+.hoverBox:hover #screen img:nth-child(1) {
+  transform: translate(40px, -40px);
+  opacity: 0.4;
+}
+
+#screenText h3 {
+  color: white;
+  display: block;
+  margin-top: 40px;
+  text-align: center;
+}
+#screenText p {
+  color: white;
+  margin: 0 auto;
+  padding: 8px;
+  text-align: center;
+}
+
+.hoverBox {
+  height: 500px;
+  width: 33.3%;
+  border-bottom: 2px solid white;
+  float: left;
+}
+.hoverBox p {
+  opacity: 0;
+}
+
+.hoverBox:hover {
+  background-color: plum;
+  transition: 0.5s;
+}
+.hoverBox:hover p {
+  opacity: 1;
+}
+
+#demo {
+  margin-top: 520px;
+  height: 950px;
+}
+#demo h2 {
+  text-align: center;
+  padding-top: 20px;
+  color: white;
+  padding-bottom: 40px;
+}
+
+.demoText {
+  color: white;
+  margin: 0 0 20px 400px;
+}
+
+#circleDemo svg {
+  fill: #d1c9fc;
+  margin-left: 130px;
+  height: 500px;
+  cursor: pointer;
+}
+
+#textArea {
+  text-align: center;
+}
+
+.st0:hover {
+  fill: #ff99cc;
+  transition: 0.5s;
+}
+
+.pieText {
+  color: white;
+  display: inline;
+  font-family: "Pacifico", cursive;
+  font-size: 30px;
+  margin: 30px 0 60px 0;
+}
+
+#moreStats {
+  margin-top: 90px;
+  margin-bottom: 50px;
+  background-color: #d1c9fc;
+  height: 600px;
+}
+#moreStats p {
+  padding: 20px;
+  width: 28%;
+  float: left;
+  text-align: center;
+  color: white;
+  border-top: 1px solid white;
+}
+
+#section3 {
+  background-color: white;
+  height: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+#section3 h2 {
+  color: #d1c9fc;
+  padding: 40px 0 0 10px;
+  margin-bottom: 30px;
+}
+#section3 p {
+  width: 200px;
+  margin: 0 auto;
+}
+
+.animationBox {
+  height: 280px;
+  width: 280px;
+  background-color: lightblue;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+#celeb2 {
+  float: right;
+  width: 50%;
+}
+
+#celeb {
+  width: 50%;
+  float: left;
+}
+
+.moreInfo {
+  padding: 70px;
+  width: 100px;
+  color: white;
+}
+
+.number {
+  float: right;
+  font-size: 120px;
+  font-family: "Pacifico", cursive;
+  color: white;
+  margin: -180px 150px 0 0;
+}
+
+/*# sourceMappingURL=main.css.map */
