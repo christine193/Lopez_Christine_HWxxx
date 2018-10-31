@@ -1,7 +1,7 @@
 
 (function(){ console.log("JS online");
 
-var hoverArea = document.getElementById('animationArea');
+/*var hoverArea = document.getElementById('animationArea');
 
 hoverArea.onmouseover = function ()
 {
@@ -14,7 +14,18 @@ hoverArea.onmouseover = function ()
       {value:0, duration:800}
     ],
   });
-}
+}*/
+
+var lineDrawing = anime({
+    targets: '#lineDrawing .lines path',
+    strokeDashoffset: [anime.setDashoffset, 0],
+    easing: 'easeInOutSine',
+    duration: 1200,
+    delay: function(el, i) { return i * 250 },
+    direction: 'alternate',
+    loop: true,
+  });
+  
 
 new WOW().init(); //animation library 
 

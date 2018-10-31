@@ -31,16 +31,19 @@ span{
 }
 
 #posterContainer{
-    height:4000px;
+    height:4500px;
     width:750px;
     margin:0 auto;
-   //background: linear-gradient(to bottom, #ccccff -7%, #ff99cc 100%);
-    //padding:20px; kinda looks cool
-    
-    background: -moz-linear-gradient(top, rgba(204,204,255,1) 0%, rgba(255,153,204,1) 100%); 
-    background: -webkit-linear-gradient(top, rgba(204,204,255,1) 0%,rgba(255,153,204,1) 100%);
-    background: linear-gradient(to bottom, rgba(204,204,255,1) 0%,rgba(255,153,204,1) 100%); 
-  
+
+    background: rgba(255,153,204,1);
+background: -moz-linear-gradient(top, rgba(255,153,204,1) 0%, rgba(208,201,252,1) 61%, rgba(255,255,255,1) 82%, rgba(255,255,255,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,153,204,1)), color-stop(61%, rgba(208,201,252,1)), color-stop(82%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1)));
+background: -webkit-linear-gradient(top, rgba(255,153,204,1) 0%, rgba(208,201,252,1) 61%, rgba(255,255,255,1) 82%, rgba(255,255,255,1) 100%);
+background: -o-linear-gradient(top, rgba(255,153,204,1) 0%, rgba(208,201,252,1) 61%, rgba(255,255,255,1) 82%, rgba(255,255,255,1) 100%);
+background: -ms-linear-gradient(top, rgba(255,153,204,1) 0%, rgba(208,201,252,1) 61%, rgba(255,255,255,1) 82%, rgba(255,255,255,1) 100%);
+background: linear-gradient(to bottom, rgba(255,153,204,1) 0%, rgba(208,201,252,1) 61%, rgba(255,255,255,1) 82%, rgba(255,255,255,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff99cc', endColorstr='#ffffff', GradientType=0 );
+
 }
 
 
@@ -120,13 +123,12 @@ span{
 #smartPhone:hover #pictureSquare{
 
     fill:$purp;
- 
-
-  }
-//section 1
+ }
 
 
-#section1
+
+//circle hover section
+#funFacts
 {
     height:420px;
     margin-top:-290px;
@@ -155,9 +157,6 @@ span{
 
 }
 
-
-
-
 .circle{
     z-index: 10;
     margin:40px 0 10px 25px;
@@ -181,8 +180,8 @@ span{
 }
 
 
-//social use
-#socialUse{
+//stats of other apps
+#otherApps{
     display:block;
 }
 //hover screens
@@ -277,7 +276,7 @@ span{
     }
 }
 
-//demographic section--pie chart
+//social demographic section--pie chart
 
 #demo{
   
@@ -294,7 +293,7 @@ span{
 }
 .demoText{
     color:white;
-    margin:0 0 20px 400px;
+    margin:10px 0 20px 400px;
 }
 #circleDemo svg
 {
@@ -324,43 +323,66 @@ cursor: pointer;
 }
 #moreStats{
       margin-top:90px;
-      margin-bottom:50px;
+      margin-bottom:70px;
       background-color:$purp;
-      height:600px;
+      height:140px;
 
     p{
+        margin-top:20px;
         padding:20px;
         width:28%;
         float:left;
         text-align: center;
         color:white;
-        border-top: 1px solid white;
+     
       
     }
 }
 
 //section 3
-#section3{
-    background-color:white;
-    height:700px;
+#financials{
+    //background-color:white;
+  
+    height:600px;
     margin:0 auto;
     text-align: center;
     h2{
-        color:$purp;
+        color:white;
         padding:40px 0 0 10px;
-        margin-bottom:30px;
+        margin:30px 0 40px 0;
+    }
+
+    h3{
+        color:$pink;
+        font-size:28px;
+        margin-bottom:20px;
     }
     p{
         width:200px;
         margin:0 auto;
+        margin-bottom: 20px;
+        color:white;
     }
+
+  
+}
+.textContent{
+    opacity:0;
+}
+ #celeb:hover .textContent{
+    opacity:1;
+}
+#celeb2:hover .textContent{
+    opacity:1;
 }
 .animationBox {
-    height:280px;
-    width:280px;
-    background-color:lightblue;
+    height:300px;
+    width:300px;
+  // background-color:lightblue;
     margin:0 auto;
     margin-top:30px;
+    border-radius:10%;
+   
 }
 #celeb2{
     float:right;
@@ -376,14 +398,49 @@ cursor: pointer;
 .moreInfo{
   padding:70px;
   width:100px;
-  color:white;
+  color:$purp;
+
+
+
+
+}
+#celeb2 svg{
+    height:100%;
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+
+    @-webkit-keyframes mover {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-10px); }
+    }
+    @keyframes mover {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-10px); }
+}
+}
+#moreInfoText{
+ 
+  
+  margin-top:-260px;
+  background-color: white;
 
 }
 .number{
     float:right;
-     font-size:120px;
-     font-family:$mainFont;
-     color:white;
-     margin:-180px 150px 0 0;
+     font-size:80px;
+     color:$purp;
+     margin:-160px 120px 0 0;
+
  
+}
+#bkgInfo{
+
+  height:700px;
+background-image:url(../images/bottom.svg);
+background-repeat: no-repeat;
+background-size:cover;
+-ms-background-size: cover;
+-moz-background-size: cover;
+-webkit-background-size: cover;
+background-position:bottom;
 }
