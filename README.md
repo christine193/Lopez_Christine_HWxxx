@@ -3,7 +3,7 @@ An interactive infographic about the mobile app Instagram.
 
 
 ## Built with
-Visual Studio Code - prefered eiditor  
+*Visual Studio Code - prefered editor  
 
 * anime.js  -javacript animation library
 * wow.js   -javascript animation library 
