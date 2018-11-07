@@ -1,4 +1,4 @@
-# Lopez_Christine_InfoGraphic
+# Lopez_Christine_HWxxx
 An interactive infographic about the mobile app Instagram. 
 
 
