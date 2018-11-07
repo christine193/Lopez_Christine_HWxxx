@@ -29,8 +29,12 @@ span {
   font-size: 20px;
 }
 
+.hidden {
+  display: none;
+}
+
 #posterContainer {
-  height: 4500px;
+  height: 4300px;
   width: 750px;
   margin: 0 auto;
   background: #ff99cc;
@@ -222,6 +226,9 @@ span {
   width: 33.3%;
   border-bottom: 2px solid white;
   float: left;
+}
+.hoverBox h3 {
+  margin-bottom: 20px;
 }
 .hoverBox p {
   opacity: 0;

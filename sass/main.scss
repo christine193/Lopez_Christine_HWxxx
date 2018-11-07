@@ -29,13 +29,15 @@ span{
     color:$pink;
     font-size:20px;
 }
+.hidden{
+    display:none;
+}
 
 #posterContainer{
-    height:4500px;
+    height:4300px;
     width:750px;
-    margin:0 auto;
-
-    background: rgba(255,153,204,1);
+     margin:0 auto;
+background: rgba(255,153,204,1);
 background: -moz-linear-gradient(top, rgba(255,153,204,1) 0%, rgba(208,201,252,1) 61%, rgba(255,255,255,1) 82%, rgba(255,255,255,1) 100%);
 background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,153,204,1)), color-stop(61%, rgba(208,201,252,1)), color-stop(82%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1)));
 background: -webkit-linear-gradient(top, rgba(255,153,204,1) 0%, rgba(208,201,252,1) 61%, rgba(255,255,255,1) 82%, rgba(255,255,255,1) 100%);
@@ -250,17 +252,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff99cc', end
   
 }
 
+
 .hoverBox
 {
-  
+ h3{
+     margin-bottom:20px;
+ }
   height:500px;
   width:33.3%;
   border-bottom:2px solid white;
-
   float:left;
-
-
-  p{
+ p{
       opacity: 0;
   }
 }
@@ -268,10 +270,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff99cc', end
     
     background-color:plum;
     transition:0.5s;
-
-   
-
-    p{
+  p{
         opacity: 1;
     }
 }
